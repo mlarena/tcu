@@ -1,0 +1,18 @@
+chmod +x make_scripts_executable.sh
+./make_scripts_executable.sh
+
+sudo apt update
+sudo apt install git -y
+
+git clone https://github.com/mlarena/tcu.git
+
+git pull origin main
+
+"BurstroyConnection": "Host=localhost;Port=5432;Database=burstroydb;Username=postgres;Password=burstroy"
+
+dotnet dev-certs https --trust
+
+# Поиск актуальных ссылок для скачивания
+curl -L -o aspnetcore-runtime-6.0.36-linux-x64.tar.gz https://dotnet.microsoft.com/download/dotnet/6.0
+curl -L -o dotnet-runtime-6.0.36-linux-x64.tar.gz https://dotnet.microsoft.com/download/dotnet/6.0
+curl -L -o dotnet-sdk-6.0.428-linux-x64.tar.gz https://dotnet.microsoft.com/download/dotnet/6.0
