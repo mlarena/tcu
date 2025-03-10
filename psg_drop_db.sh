@@ -7,6 +7,7 @@ DB_NAME="burstroydb"
 echo "Список всех баз данных:"
 sudo -u postgres psql -c "\l"
 
+
 # Проверка существования базы данных
 DB_EXISTS=$(sudo -u postgres psql -tAc "SELECT 1 FROM pg_database WHERE datname='$DB_NAME'")
 if [ -n "$DB_EXISTS" ]; then

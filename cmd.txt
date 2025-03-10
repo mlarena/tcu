@@ -1,5 +1,5 @@
-chmod +x make_scripts_executable.sh
-./make_scripts_executable.sh
+1569276958
+Burstroy2024
 
 sudo apt update
 sudo apt install git -y
@@ -12,7 +12,15 @@ git pull origin main
 
 dotnet dev-certs https --trust
 
-# Поиск актуальных ссылок для скачивания
-curl -L -o aspnetcore-runtime-6.0.36-linux-x64.tar.gz https://dotnet.microsoft.com/download/dotnet/6.0
-curl -L -o dotnet-runtime-6.0.36-linux-x64.tar.gz https://dotnet.microsoft.com/download/dotnet/6.0
-curl -L -o dotnet-sdk-6.0.428-linux-x64.tar.gz https://dotnet.microsoft.com/download/dotnet/6.0
+chmod -R 777 burstroy
+sudo apt update
+sudo apt install git -y
+git clone https://github.com/mlarena/tcu.git
+chmod +x make_scripts_executable.sh
+./make_scripts_executable.sh
+./install_curl.sh
+./install_unzip.sh
+./install_nginx.sh
+./install_dependencies.sh
+./install_dotnet_and_aspnet_internet.sh
+
