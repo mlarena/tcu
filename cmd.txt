@@ -24,3 +24,5 @@ chmod +x make_scripts_executable.sh
 ./install_dependencies.sh
 ./install_dotnet_and_aspnet_internet.sh
 
+
+chmod +x  test_lib.sh
