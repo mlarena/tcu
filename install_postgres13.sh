@@ -3,6 +3,9 @@
 # Обновление списка пакетов
 sudo apt update
 
+# Установка необходимых пакетов для работы с GPG
+sudo apt install -y gnupg gnupg2 gnupg1
+
 # Добавление репозитория PostgreSQL
 sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
 
