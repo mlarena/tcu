@@ -31,3 +31,6 @@ chmod +x  test_lib.sh
 
 sudo apt-get update
 sudo apt-get install libharfbuzz0b libfontconfig1
+
+или перейти в папку /lib
+sudo dpkg -i libharfbuzz0b*.deb libfontconfig1*.deb
