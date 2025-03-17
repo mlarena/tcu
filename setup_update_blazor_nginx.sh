@@ -3,7 +3,8 @@
 # Создание конфигурационного файла для Nginx
 sudo bash -c 'cat > /etc/nginx/sites-available/burstroyweb' <<EOF
 server {
-    listen 80;
+    listen 80 default_server;
+    listen [::]:80 default_server;
     server_name localhost;
 
     location / {
