@@ -26,7 +26,7 @@ server {
 
 server {
     listen 8082;
-    server_name 87.226.220.242;
+    server_name khabarovsk.burstroy.ru;
 
     location / {
         proxy_pass http://localhost:5000;
