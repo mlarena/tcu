@@ -49,7 +49,7 @@ EOF'
 sudo bash -c 'cat > /etc/nginx/sites-available/testweb <<EOF
 server {
     listen 80;
-    server_name _;
+    listen [::]:80 default_server;
 
     root /burstroy/testweb;
     index index.html;
