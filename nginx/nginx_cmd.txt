@@ -12,6 +12,7 @@ rm /etc/nginx/sites-enabled/burstroyweb
 
 rm /etc/nginx/sites-enabled/webtest
 
+rm /etc/nginx/sites-enabled/testweb
 tail -f /burstroy/web/logs/2025-03-24.log
 
 

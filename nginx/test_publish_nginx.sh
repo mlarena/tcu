@@ -7,7 +7,8 @@ NGINX_CONF="/etc/nginx/sites-available/testweb"
 cat <<EOL | sudo tee $NGINX_CONF
 server {
     listen 80;
-    server_name your_domain_or_ip;
+    listen [::]:80 default_server;
+    server_name khabarovsk.burstroy.ru;
 
     location / {
         proxy_pass http://localhost:5005;
