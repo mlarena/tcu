@@ -7,11 +7,6 @@ server {
     listen [::]:80 default_server;
     server_name khabarovsk.burstroy.ru;
 
-    map $http_connection $connection_upgrade {
-        "~*Upgrade" $http_connection;
-        default keep-alive;
-    }
-
     location / {
         proxy_pass http://localhost:5000;
         proxy_http_version 1.1;
