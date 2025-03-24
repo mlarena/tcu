@@ -36,3 +36,6 @@ sudo apt-get install libharfbuzz0b libfontconfig1
 
 или перейти в папку /lib
 sudo dpkg -i libharfbuzz0b*.deb libfontconfig1*.deb
+
+sudo apt update
+sudo apt install zip unzip

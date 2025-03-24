@@ -4,7 +4,7 @@
 SOURCE_PATH="/burstroy/data"
 ARCHIVE_PATH="/burstroy/application/old_data.zip"
 
-# Создать архив
-zip -r "$ARCHIVE_PATH" "$SOURCE_PATH"
+# Создать архив, исключая файлы с расширением .log
+zip -r "$ARCHIVE_PATH" "$SOURCE_PATH" -x "*.log"
 
 echo "Архив $ARCHIVE_PATH успешно создан"
