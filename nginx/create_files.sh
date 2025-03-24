@@ -17,8 +17,6 @@ cat <<EOF > "$DIR/index.html"
 </head>
 <body>
     <h1>Test BSP Page </h1>
-    <a href="indextest1.html">indextest1</a>
-    <br>
     <a href="indextestws.html">indextestws</a>
 </body>
 </html>

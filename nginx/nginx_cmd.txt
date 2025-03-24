@@ -7,3 +7,7 @@ sudo tail -f /var/log/nginx/access.log
 sudo tail -f /var/log/nginx/error.log
 
 sudo apt install tree
+
+rm /etc/nginx/sites-enabled/burstroyweb
+
+rm /etc/nginx/sites-enabled/webtest
