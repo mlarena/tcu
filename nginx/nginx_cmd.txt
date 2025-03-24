@@ -7,7 +7,18 @@ sudo tail -f /var/log/nginx/access.log
 sudo tail -f /var/log/nginx/error.log
 
 sudo apt install tree
-
+ls /etc/nginx/sites-enabled
 rm /etc/nginx/sites-enabled/burstroyweb
 
 rm /etc/nginx/sites-enabled/webtest
+
+tail -f /burstroy/web/logs/2025-03-24.log
+
+
+/usr/bin/dotnet /burstroy/testweb/BlazorApp1.dll --urls http://*:5005
+curl -O http://demo.burstroy.ru/lib/transfer/testweb.zip
+
+chmod +x test_extract_archive.sh
+chmod +x test_create_service.sh
+chmod +x test_remove_service.sh
+chmod +x test_publish_nginx.sh
