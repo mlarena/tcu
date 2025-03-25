@@ -4,6 +4,7 @@
 sudo bash -c 'cat > /etc/nginx/sites-available/burstroyweb' <<'EOF'
 server {
     listen 80;
+    listen [::]:80;
     server_name khabarovsk.burstroy.ru;
 
     location / {
@@ -17,7 +18,7 @@ server {
         proxy_set_header X-Forwarded-Proto $scheme;
     }
 
-    location /ws/ {
+    location /_blazor/ {
         proxy_pass http://localhost:5000;
         proxy_http_version 1.1;
         proxy_set_header Upgrade $http_upgrade;
