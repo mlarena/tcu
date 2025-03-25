@@ -16,7 +16,6 @@ server {
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
         proxy_set_header X-Forwarded-Proto $scheme;
 
-        # Добавление заголовков CORS
         add_header 'Access-Control-Allow-Origin' 'http://khabarovsk.burstroy.ru';
         add_header 'Access-Control-Allow-Methods' 'GET, POST, OPTIONS';
         add_header 'Access-Control-Allow-Headers' 'Content-Type, Authorization';
@@ -33,7 +32,6 @@ server {
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
         proxy_set_header X-Forwarded-Proto $scheme;
 
-        # Добавление заголовков CORS
         add_header 'Access-Control-Allow-Origin' 'http://khabarovsk.burstroy.ru';
         add_header 'Access-Control-Allow-Methods' 'GET, POST, OPTIONS';
         add_header 'Access-Control-Allow-Headers' 'Content-Type, Authorization';
@@ -50,7 +48,6 @@ server {
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
         proxy_set_header X-Forwarded-Proto $scheme;
 
-        # Добавление заголовков CORS
         add_header 'Access-Control-Allow-Origin' 'http://khabarovsk.burstroy.ru';
         add_header 'Access-Control-Allow-Methods' 'GET, POST, OPTIONS';
         add_header 'Access-Control-Allow-Headers' 'Content-Type, Authorization';
