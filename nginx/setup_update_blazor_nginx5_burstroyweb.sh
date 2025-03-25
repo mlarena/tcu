@@ -21,8 +21,6 @@ server {
         add_header 'Access-Control-Allow-Headers' 'Content-Type, Authorization';
         add_header 'Access-Control-Allow-Credentials' 'true';
     }
-
-   
 }
 EOF
 
