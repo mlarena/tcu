@@ -3,8 +3,8 @@
 # Создание конфигурационного файла для Nginx
 sudo bash -c 'cat > /etc/nginx/sites-available/burstroyweb' <<'EOF'
 server {
-    listen 80;
-    server_name khabarovsk.burstroy.ru;
+    listen 80 default_server;
+    server_name 87.226.220.242:8082;
 
     location / {
         proxy_pass http://localhost:5000;
