@@ -4,7 +4,7 @@
 sudo bash -c 'cat > /etc/nginx/sites-available/burstroyweb' <<'EOF'
 server {
     listen 80 default_server;
-    server_name 87.226.220.242:8082;
+    server_name 87.226.220.242;
 
     location / {
         proxy_pass http://localhost:5000;
@@ -17,6 +17,7 @@ server {
         proxy_set_header X-Forwarded-Proto $scheme;
 
         add_header 'Access-Control-Allow-Origin' 'http://khabarovsk.burstroy.ru';
+        add_header 'Access-Control-Allow-Origin' 'http://87.226.220.242';
         add_header 'Access-Control-Allow-Methods' 'GET, POST, OPTIONS';
         add_header 'Access-Control-Allow-Headers' 'Content-Type, Authorization';
         add_header 'Access-Control-Allow-Credentials' 'true';
