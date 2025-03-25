@@ -13,7 +13,7 @@ rm /etc/nginx/sites-enabled/burstroyweb
 rm /etc/nginx/sites-enabled/webtest
 
 rm /etc/nginx/sites-enabled/testweb
-tail -f /burstroy/web/logs/2025-03-24.log
+tail -f /burstroy/web/logs/2025-03-25.log
 
 
 /usr/bin/dotnet /burstroy/testweb/BlazorApp1.dll --urls http://*:5005
@@ -21,3 +21,6 @@ curl -O http://demo.burstroy.ru/lib/transfer/testweb.zip
 
 sudo tail -f /var/log/nginx/error.log
 sudo tail -f /var/log/nginx/access.log
+
+sudo tail -f  /var/log/nginx/burstroyweb_access.log;
+sudo tail -f /var/log/nginx/burstroyweb_error.log;
