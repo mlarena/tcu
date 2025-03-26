@@ -36,6 +36,12 @@ sudo apt-get upgrade
 sudo apt-get install libharfbuzz0b libfontconfig1
 sudo apt-get install -y libfontconfig1 libharfbuzz0b
 sudo apt-get install libskia-sharp
+dotnet add package SkiaSharp
+
+sudo apt-get update
+sudo apt-get install libfontconfig1 libharfbuzz0b libfreetype6 libpng16-16 libjpeg-dev libglib2.0-0
+dotnet add package SkiaSharp
+
 
 strace dotnet Burstroy.TCU.WebAssembly.Server.dll
 
