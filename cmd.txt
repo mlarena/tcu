@@ -32,14 +32,18 @@ chmod +x  test_lib.sh
 sudo rm -rf /tmp/*
 
 sudo apt-get update
+sudo apt-get upgrade
 sudo apt-get install libharfbuzz0b libfontconfig1
+sudo apt-get install -y libfontconfig1 libharfbuzz0b
+sudo apt-get install libskia-sharp
+
+strace dotnet Burstroy.TCU.WebAssembly.Server.dll
+
+export LD_LIBRARY_PATH=/path/to/libSkiaSharp:$LD_LIBRARY_PATH
+dotnet Burstroy.TCU.WebAssembly.Server.dll
 
 или перейти в папку /lib
 sudo dpkg -i libharfbuzz0b*.deb libfontconfig1*.deb
 
 sudo apt update
 sudo apt install zip unzip
-
-sudo journalctl -u burstroy-api.service -f
-sudo journalctl -u burstroy-data.service -f
-sudo journalctl -u burstroy-web.service -f

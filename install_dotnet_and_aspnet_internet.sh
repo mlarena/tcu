@@ -26,4 +26,4 @@ sudo apt-get install -y dotnet-sdk-6.0
 echo "Установка завершена!"
 echo "Установленная версия .NET:"
 dotnet --version
-ls -l
+
