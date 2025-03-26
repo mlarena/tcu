@@ -39,3 +39,7 @@ sudo dpkg -i libharfbuzz0b*.deb libfontconfig1*.deb
 
 sudo apt update
 sudo apt install zip unzip
+
+sudo journalctl -u burstroy-api.service -f
+sudo journalctl -u burstroy-data.service -f
+sudo journalctl -u burstroy-web.service -f

@@ -24,3 +24,7 @@ sudo tail -f /var/log/nginx/access.log
 
 sudo tail -f  /var/log/nginx/burstroyweb_access.log;
 sudo tail -f /var/log/nginx/burstroyweb_error.log;
+
+sudo apt-get install -y libc6 libicu-dev libfontconfig1
+sudo apt-get install ttf-mscorefonts-installer
+sudo apt install -y libjpeg-turbo8
